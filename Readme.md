@@ -1,6 +1,5 @@
 
 # Car Rental Website
-![image](https://user-images.githubusercontent.com/94858728/179468869-162b4b62-6eb1-4df2-ad05-9ffd933d133f.png)
 
 # Techstack
   1. Frontend 
