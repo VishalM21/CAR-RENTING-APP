@@ -41,27 +41,8 @@ Backend
            -    Places API (returns information about places using HTTP requests) <br>
            -    Autocomplete API (for easy searching of place)
    - Payment using stripe
-   
-   # In Action 👀
-   
            
-           
-           
-     
-
-
-  
-
-https://user-images.githubusercontent.com/94858728/179477838-3a9ef906-c8cd-4469-9513-bb4f731db308.mp4
-
-
-
-https://user-images.githubusercontent.com/94858728/179478979-fe461bf2-cead-4a74-a880-5de61b094ca4.mp4
-
-
-
-https://user-images.githubusercontent.com/94858728/179479516-84a7868a-b83d-4c78-b1fc-9f77145a9573.mp4
-
+          
 
 
 
