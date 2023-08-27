@@ -239,14 +239,14 @@ app.post('/listCar2',requireLogin,(req,res)=>{
     Car.findOne({_id:req.body.carID})
     .then((car)=>{
         let url={
-            //imageUrl: `https://vishalapp.s3.ap-south-1.amazonaws.com/${req.body.image}`
-            imageUrl: `https://www.mercedes-benz.co.in/content/india/en/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_469564746.component.damq2.3375083919065.png/simple_teaser_a_45.png`
+            imageUrl: `https://vishalapp.s3.ap-south-1.amazonaws.com/${req.body.image}`
+           // imageUrl: `https://www.mercedes-benz.co.in/content/india/en/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_469564746.component.damq2.3375083919065.png/simple_teaser_a_45.png`
         };
         car.pricePerHour=req.body.pricePerHour;
         car.pricePerWeek=req.body.pricePerWeek;
         car.location=req.body.location;
-       // car.picture=`https://vishalapp.s3.ap-south-1.amazonaws.com/${req.body.image}`;
-        car.picture=`https://www.mercedes-benz.co.in/content/india/en/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_469564746.component.damq2.3375083919065.png/simple_teaser_a_45.png`;
+       car.picture=`https://vishalapp.s3.ap-south-1.amazonaws.com/${req.body.image}`;
+        //car.picture=`https://www.mercedes-benz.co.in/content/india/en/passengercars/_jcr_content/root/responsivegrid/simple_teaser_115569/simple_teaser_item_469564746.component.damq2.3375083919065.png/simple_teaser_a_45.png`;
         car.image.push(url);
         car.save((err,car)=>{
             if(err){
